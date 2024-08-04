@@ -1,0 +1,214 @@
+{
+    "edges": [],
+    "nodes": [],
+    "converted_flow_data": [
+        {
+            "current_node": 0,
+            "conditional_node": {
+                "Yes": 1
+            },
+            "trigger_condition" : {"startwith" : [] , "equal" : ["Hello","Hi","hi","hello","helo","help","Help","Enquire","Hi, I need help. Can someone assist me, please?","Hayy","Heloo","Hellooo","Helloo","Hiii","Hii","Hiie","Hay","Heyy","Helo","Helloo","Hullo","Hallo","Helloo","Hai","Hie"], "include" : []},
+            "action": {
+                "app": "whatsapp",
+                "type": "template_message",
+                "template_id": 345890321893796
+            }
+        },
+        {
+            "current_node": 1,
+            "conditional_node": {
+                "Fashion Design": 2,
+                "Interior Design": 3,
+                "Jewellery Design":4,
+                "Graphic Design":5,
+                "Event Management":6,
+                "Photography":7,
+                "Hair & Makeup":8
+            },
+            "action": {
+                "app": "whatsapp",
+                "type": "interactive_message",
+                "payload": "{\"recipient_type\":\"individual\",\"messaging_product\":\"whatsapp\",\"to\":\"{{to}}\",\"type\":\"interactive\",\"interactive\":{\"type\":\"list\",\"body\":{\"text\":\"Excellent! Your creative journey begins right now.\\n\\nSince its inception in 1988, JD Institute of Fashion Technology has helped more than 1 Lakh students carve a niche for themselves in the design industry.\\n\\nWhich of our Courses do you wish to explore?\"},\"footer\":{\"text\":\"Please reply with \\\"STOP\\\" to opt-out\"},\"action\":{\"button\":\"Browse Options\",\"sections\":[{\"title\":\"Option\",\"rows\":[{\"id\":\"Fashion Design\",\"title\":\"Fashion Design\"},{\"id\":\"Interior Design\",\"title\":\"Interior Design\"},{\"id\":\"Jewellery Design\",\"title\":\"Jewellery Design\"},{\"id\":\"Graphic Design\",\"title\":\"Graphic Design\"},{\"id\":\"Event Management\",\"title\":\"Event Management\"},{\"id\":\"Photography\",\"title\":\"Photography\"},{\"id\":\"Hair & Makeup\",\"title\":\"Hair & Makeup\"}]}]}}}"
+            }
+        },
+        {
+            "current_node": 2,
+            "sub_condition" :{
+                "select_option": "screen_0_Dropdown_3",
+                "next_node":{"Bangalore":10,"Cochin":12,"Goa":13,"Hyderabad":14,"Vijayawada":15,"notmatch":11}
+            },
+            "conditional_node": {
+                "next_node": 9
+            },
+            "change_conditional_node": true,
+            "action": {
+                "app": "whatsapp",
+                "type": "interactive_message",
+                "payload": "{\"messaging_product\":\"whatsapp\",\"to\":\"9398930461\",\"recipient_type\":\"individual\",\"type\":\"interactive\",\"interactive\":{\"type\":\"flow\",\"body\":{\"text\":\"JD Institute offers Bachelor's degree, Master's degree, post-graduate and advanced diploma courses in Fashion Design.\\n\\nPlease enter your information for a student counsellor to connect with you.\"},\"action\":{\"name\":\"flow\",\"parameters\":{\"flow_message_version\":\"3\",\"flow_action\":\"navigate\",\"flow_token\":\"random_user_generated_token\",\"flow_id\":\"1554575965414436\",\"flow_cta\":\"Request a Call\",\"flow_action_payload\":{\"screen\":\"REQUESTCALL\",\"data\":{\"custom_variable\":\"custom_value\"}}}}}}"
+            }
+        },
+        {
+            "current_node": 3,
+            "conditional_node": {
+            "next_node": 9
+            },
+            "change_conditional_node": true,
+            "action": {
+                "app": "whatsapp",
+                "type": "interactive_message",
+                "payload": "{\"messaging_product\":\"whatsapp\",\"to\":\"9398930461\",\"recipient_type\":\"individual\",\"type\":\"interactive\",\"interactive\":{\"type\":\"flow\",\"body\":{\"text\":\"JD Institute offers Bachelor's degree, Master's degree, post-graduate and advanced diploma courses in Interior Design.\\n\\nPlease enter your information for a student counsellor to connect with you.\"},\"action\":{\"name\":\"flow\",\"parameters\":{\"flow_message_version\":\"3\",\"flow_action\":\"navigate\",\"flow_token\":\"random_user_generated_token\",\"flow_id\":\"1554575965414436\",\"flow_cta\":\"Request a Call\",\"flow_action_payload\":{\"screen\":\"REQUESTCALL\",\"data\":{\"custom_variable\":\"custom_value\"}}}}}}"
+            }
+        },
+        {
+            "current_node": 4,
+            "conditional_node": {
+            "next_node": 9
+            },
+            "change_conditional_node": true,
+            "action": {
+                "app": "whatsapp",
+                "type": "interactive_message",
+                "payload": "{\"messaging_product\":\"whatsapp\",\"to\":\"9398930461\",\"recipient_type\":\"individual\",\"type\":\"interactive\",\"interactive\":{\"type\":\"flow\",\"body\":{\"text\":\"JD Institute offers Bachelor's degree, Master's degree, diploma and advanced diploma courses in Jewellery Design.\\n\\nPlease enter your information for a student counsellor to connect with you.\"},\"action\":{\"name\":\"flow\",\"parameters\":{\"flow_message_version\":\"3\",\"flow_action\":\"navigate\",\"flow_token\":\"random_user_generated_token\",\"flow_id\":\"1554575965414436\",\"flow_cta\":\"Request a Call\",\"flow_action_payload\":{\"screen\":\"REQUESTCALL\",\"data\":{\"custom_variable\":\"custom_value\"}}}}}}"
+            }
+        }, 
+        {
+            "current_node": 5,
+            "conditional_node": {
+            "next_node": 9
+            },
+            "change_conditional_node": true,
+            "action": {
+                "app": "whatsapp",
+                "type": "interactive_message",
+                "payload": "{\"messaging_product\":\"whatsapp\",\"to\":\"9398930461\",\"recipient_type\":\"individual\",\"type\":\"interactive\",\"interactive\":{\"type\":\"flow\",\"body\":{\"text\":\"JD Institute offers Bachelor's degree, Master's degree and diploma courses in Graphic Design.\\n\\nPlease enter your information for a student counsellor to connect with you.\"},\"action\":{\"name\":\"flow\",\"parameters\":{\"flow_message_version\":\"3\",\"flow_action\":\"navigate\",\"flow_token\":\"random_user_generated_token\",\"flow_id\":\"1554575965414436\",\"flow_cta\":\"Request a Call\",\"flow_action_payload\":{\"screen\":\"REQUESTCALL\",\"data\":{\"custom_variable\":\"custom_value\"}}}}}}"
+            }
+        },
+        {
+            "current_node": 6,
+            "conditional_node": {
+            "next_node": 9
+            },
+            "change_conditional_node": true,
+            "action": {
+                "app": "whatsapp",
+                "type": "interactive_message",
+                "payload": "{\"messaging_product\":\"whatsapp\",\"to\":\"9398930461\",\"recipient_type\":\"individual\",\"type\":\"interactive\",\"interactive\":{\"type\":\"flow\",\"body\":{\"text\":\"JD Institute offers Master's degree and diploma courses in Event Management.\\n\\nPlease enter your information for a student counsellor to connect with you.\"},\"action\":{\"name\":\"flow\",\"parameters\":{\"flow_message_version\":\"3\",\"flow_action\":\"navigate\",\"flow_token\":\"random_user_generated_token\",\"flow_id\":\"1554575965414436\",\"flow_cta\":\"Request a Call\",\"flow_action_payload\":{\"screen\":\"REQUESTCALL\",\"data\":{\"custom_variable\":\"custom_value\"}}}}}}"
+            }
+        },
+        {
+            "current_node": 7,
+            "conditional_node": {
+            "next_node": 9
+            },
+            "change_conditional_node": true,
+            "action": {
+                "app": "whatsapp",
+                "type": "interactive_message",
+                "payload": "{\"messaging_product\":\"whatsapp\",\"to\":\"9398930461\",\"recipient_type\":\"individual\",\"type\":\"interactive\",\"interactive\":{\"type\":\"flow\",\"body\":{\"text\":\"JD Institute offers a diploma course in Fashion Photography.\\n\\nPlease enter your information for a student counsellor to connect with you.\"},\"action\":{\"name\":\"flow\",\"parameters\":{\"flow_message_version\":\"3\",\"flow_action\":\"navigate\",\"flow_token\":\"random_user_generated_token\",\"flow_id\":\"1554575965414436\",\"flow_cta\":\"Request a Call\",\"flow_action_payload\":{\"screen\":\"REQUESTCALL\",\"data\":{\"custom_variable\":\"custom_value\"}}}}}}"
+            }
+        },
+        {
+            "current_node": 8,
+            "conditional_node": {
+            "next_node": 9
+            },
+            "change_conditional_node": true,
+            "action": {
+                "app": "whatsapp",
+                "type": "interactive_message",
+                "payload": "{\"messaging_product\":\"whatsapp\",\"to\":\"9398930461\",\"recipient_type\":\"individual\",\"type\":\"interactive\",\"interactive\":{\"type\":\"flow\",\"body\":{\"text\":\"JD Institute offers a diploma course in Makeup and Hairstyle Artistry.\\n\\nPlease enter your information for a student counsellor to connect with you.\"},\"action\":{\"name\":\"flow\",\"parameters\":{\"flow_message_version\":\"3\",\"flow_action\":\"navigate\",\"flow_token\":\"random_user_generated_token\",\"flow_id\":\"1554575965414436\",\"flow_cta\":\"Request a Call\",\"flow_action_payload\":{\"screen\":\"REQUESTCALL\",\"data\":{\"custom_variable\":\"custom_value\"}}}}}}"
+            }
+        },
+        {
+            "current_node": 9,
+            "action":{
+                "app": "whatsapp",
+                "type": "service_message",
+                "payload": "{\"message_body\": \"Thank you for your interest! Our team will contact you soon.\", \"caption\": null, \"filename\": null, \"type\": \"text\", \"media_link\": null}"
+            }
+        },
+        {
+            "current_node": 10,
+            "conditional_node": {
+                "next_node": 9
+            },
+            "change_conditional_node": true,
+            "action": {
+                "app": "whatsapp",
+                "type": "interactive_message",
+                "payload": "{\"messaging_product\":\"whatsapp\",\"to\":\"9398930461\",\"recipient_type\":\"individual\",\"type\":\"interactive\",\"interactive\":{\"type\":\"flow\",\"body\":{\"text\":\"Select a course.\"},\"action\":{\"name\":\"flow\",\"parameters\":{\"flow_message_version\":\"3\",\"flow_action\":\"navigate\",\"flow_token\":\"random_user_generated_token\",\"flow_id\":\"459554420304474\",\"flow_cta\":\"Open Form\",\"flow_action_payload\":{\"screen\":\"SELECTCOURSE\",\"data\":{\"custom_variable\":\"custom_value\"}}}}}}"
+            }
+        },
+        {
+            "current_node": 11,
+            "action":{
+                "app": "whatsapp",
+                "type": "service_message",
+                "payload": "{\"message_body\": \"Sorry, we do not have this course for this location.\", \"caption\": null, \"filename\": null, \"type\": \"text\", \"media_link\": null}"
+            }
+        },
+        {
+            "current_node": 12,
+            "conditional_node": {
+                "next_node": 9
+            },
+            "change_conditional_node": true,
+            "action": {
+                "app": "whatsapp",
+                "type": "interactive_message",
+                "payload": "{\"messaging_product\":\"whatsapp\",\"to\":\"9398930461\",\"recipient_type\":\"individual\",\"type\":\"interactive\",\"interactive\":{\"type\":\"flow\",\"body\":{\"text\":\"Select a course.\"},\"action\":{\"name\":\"flow\",\"parameters\":{\"flow_message_version\":\"3\",\"flow_action\":\"navigate\",\"flow_token\":\"random_user_generated_token\",\"flow_id\":\"1025532559081652\",\"flow_cta\":\"Open Form\",\"flow_action_payload\":{\"screen\":\"SELECTCOURSE\",\"data\":{\"custom_variable\":\"custom_value\"}}}}}}"
+            }
+        },
+        {
+            "current_node": 13,
+            "conditional_node": {
+                "next_node": 9
+            },
+            "change_conditional_node": true,
+            "action": {
+                "app": "whatsapp",
+                "type": "interactive_message",
+                "payload": "{\"messaging_product\":\"whatsapp\",\"to\":\"9398930461\",\"recipient_type\":\"individual\",\"type\":\"interactive\",\"interactive\":{\"type\":\"flow\",\"body\":{\"text\":\"Select a course.\"},\"action\":{\"name\":\"flow\",\"parameters\":{\"flow_message_version\":\"3\",\"flow_action\":\"navigate\",\"flow_token\":\"random_user_generated_token\",\"flow_id\":\"855824815954723\",\"flow_cta\":\"Open Form\",\"flow_action_payload\":{\"screen\":\"SELECTCOURSE\",\"data\":{\"custom_variable\":\"custom_value\"}}}}}}"
+            }
+        },
+        {
+            "current_node": 14,
+            "conditional_node": {
+                "next_node": 9
+            },
+            "change_conditional_node": true,
+            "action": {
+                "app": "whatsapp",
+                "type": "interactive_message",
+                "payload": "{\"messaging_product\":\"whatsapp\",\"to\":\"9398930461\",\"recipient_type\":\"individual\",\"type\":\"interactive\",\"interactive\":{\"type\":\"flow\",\"body\":{\"text\":\"Select a course.\"},\"action\":{\"name\":\"flow\",\"parameters\":{\"flow_message_version\":\"3\",\"flow_action\":\"navigate\",\"flow_token\":\"random_user_generated_token\",\"flow_id\":\"1202321057587203\",\"flow_cta\":\"Open Form\",\"flow_action_payload\":{\"screen\":\"SELECTCOURSE\",\"data\":{\"custom_variable\":\"custom_value\"}}}}}}"
+            }
+        },
+        {
+            "current_node": 15,
+            "conditional_node": {
+                "next_node": 9
+            },
+            "change_conditional_node": true,
+            "action": {
+                "app": "whatsapp",
+                "type": "interactive_message",
+                "payload": "{\"messaging_product\":\"whatsapp\",\"to\":\"9398930461\",\"recipient_type\":\"individual\",\"type\":\"interactive\",\"interactive\":{\"type\":\"flow\",\"body\":{\"text\":\"Select a course.\"},\"action\":{\"name\":\"flow\",\"parameters\":{\"flow_message_version\":\"3\",\"flow_action\":\"navigate\",\"flow_token\":\"random_user_generated_token\",\"flow_id\":\"1419735785357623\",\"flow_cta\":\"Open Form\",\"flow_action_payload\":{\"screen\":\"SELECTCOURSE\",\"data\":{\"custom_variable\":\"custom_value\"}}}}}}"
+            }
+        }
+    ],
+    "trigger_details": {
+        "equal": [
+            ""
+        ],
+        "startwith": [
+            ""
+        ],
+        "include": [
+            ""
+        ],
+        "exclude": [
+            ""
+        ],
+        "campaign_name": "Test"
+    }
+}

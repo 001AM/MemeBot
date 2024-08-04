@@ -1,0 +1,46 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+env/
+venv/
+*.env
+*.venv
+*.pyenv
+*.venv/
+
+# Django
+*.log
+*.sqlite3
+db.sqlite3
+*.pkl
+*.pot
+*.mo
+staticfiles/
+media/
+
+# IDEs
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Misc
+*.egg
+*.egg-info/
+dist/
+build/
+*.manifest
+*.spec
+
+# Environment variables
+.env
+*.env
