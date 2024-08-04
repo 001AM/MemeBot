@@ -2,9 +2,13 @@ import aiohttp
 from typing import Final
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
+from dotenv import load_dotenv
+import os
 
-TOKEN: Final = '7293601483:AAGCgIlbsyshfxSgS87k09HkYfOzzu88wEQ'
-BOT_USERNAME: Final = 'Meme1468Bot'
+load_dotenv()
+
+TOKEN: Final = os.getenv('TOKEN')
+BOT_USERNAME: Final = os.getenv('BOT_USERNAME')
 
 async def start_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text('Hello!')
