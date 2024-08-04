@@ -47,7 +47,7 @@ pip install aiohttp python-telegram-bot
    Execute the Python script to start the bot:
 
    ```bash
-   python bot.py
+   python main.py
    ```
 
 ## Code Explanation
