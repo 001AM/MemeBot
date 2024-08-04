@@ -31,8 +31,7 @@ pip install aiohttp python-telegram-bot
    Clone this repository to your local machine:
 
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone "https://github.com/001AM/MemeBot.git"
    ```
 
 2. **Configure Your Bot**
@@ -60,10 +59,6 @@ pip install aiohttp python-telegram-bot
   - `/meme`: Fetches and sends a random meme from an external API.
 - **Message Handling**: Processes text messages and responds based on keywords. If the message contains "hello", it replies with a friendly greeting. If it contains "meme", it fetches and sends a meme.
 - **Error Handling**: Logs errors encountered during bot operation.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgements
 
